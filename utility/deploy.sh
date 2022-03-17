@@ -18,4 +18,5 @@ echo "##############################"
 echo "Deploying Frontend project..."
 echo "##############################"
 
-scp -r ./build/* root@$DROPLET_URL:/var/www/$PROJECT_NAME
+scp -r ./build/* root@164.92.241.246:/var/www/HobbyConnect
+#scp -r ./build/* root@$DROPLET_URL:/var/www/$PROJECT_NAME
