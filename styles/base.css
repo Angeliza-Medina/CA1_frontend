@@ -7,21 +7,23 @@
 	/* Colors */
 	--black: #000000;
   --white: #ffffff;
+  --darkBlue: #0e0c57;
 }
 /*------------------------------- Global variables END ------------------------------*/
 
 
 /*-------------------------------------- Fonts --------------------------------------*/
-/* @font-face{
-  font-family: Ubuntu_regular;
-  src: url("../fonts/Ubuntu/Ubuntu-Regular.ttf");
-} */
+@font-face{
+  font-family: Oswarld_regular;
+  src: url("/fonts/Oswald/static/Oswald-Regular.ttf");
+}
 /*------------------------------------ Fonts END ------------------------------------*/
 
 
 /*-------------------------------- Set default stuff --------------------------------*/
 html{
 	overflow-y: scroll;
+  overflow-x: hidden;
   -moz-scrollbars: vertical;
 }
 
@@ -31,9 +33,20 @@ html{
 	box-sizing: border-box;
 }
 
-body{
-	max-width: 2000px;
+body {
+  max-width: 100%;
+  min-height: 800px;
+  background-color: var(--darkBlue);
+}
+
+#wrapper{
+	max-width: 1900px;
 	margin: 0 auto;
+  color: var(--white);
+}
+
+h1, h2, h3{
+  font-weight: normal;
 }
 
 a{
@@ -50,6 +63,10 @@ p{
   padding-bottom: .5em;
 }
 
+h1{
+  font-family: Oswarld_regular;
+}
+
 button{
   cursor: pointer;
 }
@@ -60,7 +77,6 @@ button:focus, input:focus{
 
 img, video{
   width: 100%;
-  display: block;
   text-align: center;
 }
 
