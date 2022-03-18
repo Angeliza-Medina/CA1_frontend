@@ -8,6 +8,7 @@
 	--black: #000000;
   --white: #ffffff;
   --darkBlue: #0e0c57;
+  --purple: #df0bb5;
 }
 /*------------------------------- Global variables END ------------------------------*/
 
@@ -16,6 +17,11 @@
 @font-face{
   font-family: Oswarld_regular;
   src: url("/fonts/Oswald/static/Oswald-Regular.ttf");
+}
+
+@font-face{
+  font-family: Roboto_regular;
+  src: url("/fonts/Roboto/Roboto-Regular.ttf");
 }
 /*------------------------------------ Fonts END ------------------------------------*/
 
@@ -36,12 +42,14 @@ html{
 body {
   max-width: 100%;
   min-height: 800px;
+  padding-bottom: 30px;
   background-color: var(--darkBlue);
 }
 
 #wrapper{
 	max-width: 1900px;
 	margin: 0 auto;
+  font-family: Roboto_regular;
   color: var(--white);
 }
 
@@ -52,11 +60,11 @@ h1, h2, h3{
 a{
   cursor: pointer;
   text-decoration: none;
-  /* color: var(--white); */
+  color: var(--white);
 }
 
 a:visited{
-  /* color: var(--white); */
+  color: var(--white);
 }
 
 p{
