@@ -50,7 +50,7 @@ const getAllHobbies = () => {
 
     const thTxt = ["Id", "Hobby", "Beskrivelse"];
 
-    for(i = 0; i < thTxt.length; i++){
+    for(let i = 0; i < thTxt.length; i++){
       let hobbyList_th_element = document.createElement("th");
       hobbyList_th_element.innerHTML = thTxt[i];
       hobbyList_1stTr_element.appendChild(hobbyList_th_element);
